@@ -1,0 +1,13 @@
+def define_posicoes (linha, coluna, orientacao, tamanho):
+  resposta = []
+  if orientacao == "vertical":
+    a = 0
+    while a < tamanho:
+      resposta.append([linha + a, coluna])
+      a = a + 1
+  else:
+    a = 0
+    while a < tamanho:
+      resposta.append([linha, coluna + a])
+      a = a + 1
+  return resposta
